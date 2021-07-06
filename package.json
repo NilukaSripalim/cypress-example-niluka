@@ -1,0 +1,30 @@
+{
+  "name": "cypress-example-niluka",
+  "version": "1.0.0",
+  "description": "Example code for series of blog posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilukaSripalim/cypress-example-niluka.git"
+  },
+  "keywords": [
+    "cypress",
+    "Nodejs",
+    "Typescript"
+  ],
+  "author": "NILUKA SRIPALI <monnankulamans@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NilukaSripalim/cypress-example-niluka/issues"
+  },
+  "homepage": "https://github.com/NilukaSripalim/cypress-example-niluka#readme",
+  "devDependencies": {
+    "cypress": "^7.6.0"
+  },
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
