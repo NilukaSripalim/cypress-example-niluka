@@ -1,19 +1,47 @@
 {
-    "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
+  "compilerOptions": {
+      "esModuleInterop": true,
+      "module": "esnext",
       "moduleResolution": "node",
-      "sourceMap": true,
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      "removeComments": false,
-      "noImplicitAny": true,
+      "noImplicitAny": false,
+      "jsx": "react",
+      "resolveJsonModule": true,
+      "noLib": false,
+      "suppressImplicitAnyIndexErrors": true,
+      "baseUrl": ".",
       "declaration": true,
-      "outDir": "build",
-      "typeRoots": ["node_modules/@types"]
-    },
-    "exclude": [
+      "experimentalDecorators": true,
+      "lib": [
+          "es6",
+          "dom"
+      ],
+      "outDir": "dist",
+      "target": "es5",
+      "types": [
+          "cypress",
+          "node"
+      ],
+      "sourceMap": false
+  },
+  "include": [
+      "cypress/integration",
+      "cypress/fixtures",
+      "cypress/page-objects",
+      "cypress/plugins",
+      "cypress/support"
+  ],
+  "compileOnSave": false,
+  "exclude": [
       "node_modules",
-      // "test/**/*"
-    ]
-  }
+      "cypress/reports",
+      "logs",
+      "*.test.js",
+      "*.test.jsx",
+      "*.test.ts",
+      "*.test.tsx",
+      "*.spec.js",
+      "*.spec.jsx",
+      "*.spec.ts",
+      "*.spec.tsx"
+  ]
+}
